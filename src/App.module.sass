@@ -1,0 +1,43 @@
+.app
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+.shadow
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.3)
+.app_wrapper
+  width: min(100%, 500px)
+  min-height: 400px
+  border-radius: 15px
+  @extend .shadow
+.app_container
+  padding: 20px 0
+  width: min(100%, 320px)
+  margin-inline: auto
+  h1
+    margin-bottom: 20px
+  ul
+    margin-bottom: 20px
+    li
+      border: 1px solid grey
+      padding: 8px
+.price
+  @extend .shadow
+  padding: 10px
+  border-radius: 15px
+  display: flex
+  justify-content: space-between
+  margin-bottom: 20px
+  select
+    border: 1px solid var(--select-border)
+    cursor: pointer
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%)
+  button
+    border: none
+    background: none
+    cursor: pointer
+.total
+  p
+    margin-bottom: 10px
+  span
+    font-weight: 700
